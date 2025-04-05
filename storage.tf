@@ -41,7 +41,7 @@ resource "azurerm_storage_account" "new_storage" {
 # Creating a storage container with a new name
 
 resource "azurerm_storage_container" "new_container" {
-  name                  = "newcontainer"
+  name                  = "ashishcontainer"
   storage_account_id    = azurerm_storage_account.new_storage.id
   container_access_type = "private"
 }
